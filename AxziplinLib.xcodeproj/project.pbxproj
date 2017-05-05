@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC67581E1EBC9FE000B1AFFC /* AxziplinLib.h in Headers */ = {isa = PBXBuildFile; fileRef = DC67581C1EBC9FE000B1AFFC /* AxziplinLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC6758261EBCA10300B1AFFC /* AxziplinLib.h in Headers */ = {isa = PBXBuildFile; fileRef = DC6758251EBCA10300B1AFFC /* AxziplinLib.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC6758191EBC9FE000B1AFFC /* AxziplinLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AxziplinLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC67581C1EBC9FE000B1AFFC /* AxziplinLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxziplinLib.h; sourceTree = "<group>"; };
 		DC67581D1EBC9FE000B1AFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC6758251EBCA10300B1AFFC /* AxziplinLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxziplinLib.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +30,7 @@
 		DC67580F1EBC9FE000B1AFFC = {
 			isa = PBXGroup;
 			children = (
+				DC6758241EBCA10300B1AFFC /* Sources */,
 				DC67581B1EBC9FE000B1AFFC /* AxziplinLib */,
 				DC67581A1EBC9FE000B1AFFC /* Products */,
 			);
@@ -46,10 +47,17 @@
 		DC67581B1EBC9FE000B1AFFC /* AxziplinLib */ = {
 			isa = PBXGroup;
 			children = (
-				DC67581C1EBC9FE000B1AFFC /* AxziplinLib.h */,
 				DC67581D1EBC9FE000B1AFFC /* Info.plist */,
 			);
 			path = AxziplinLib;
+			sourceTree = "<group>";
+		};
+		DC6758241EBCA10300B1AFFC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DC6758251EBCA10300B1AFFC /* AxziplinLib.h */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +67,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC67581E1EBC9FE000B1AFFC /* AxziplinLib.h in Headers */,
+				DC6758261EBCA10300B1AFFC /* AxziplinLib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
