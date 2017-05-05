@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC6758261EBCA10300B1AFFC /* AxziplinLib.h in Headers */ = {isa = PBXBuildFile; fileRef = DC6758251EBCA10300B1AFFC /* AxziplinLib.h */; };
+		DC6758281EBCA36000B1AFFC /* Encryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758271EBCA36000B1AFFC /* Encryptor.swift */; };
+		DC67582A1EBCA37400B1AFFC /* AxziplinLib.h in Headers */ = {isa = PBXBuildFile; fileRef = DC6758291EBCA37400B1AFFC /* AxziplinLib.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC6758191EBC9FE000B1AFFC /* AxziplinLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AxziplinLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC67581D1EBC9FE000B1AFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC6758251EBCA10300B1AFFC /* AxziplinLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxziplinLib.h; sourceTree = "<group>"; };
+		DC6758271EBCA36000B1AFFC /* Encryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encryptor.swift; sourceTree = "<group>"; };
+		DC6758291EBCA37400B1AFFC /* AxziplinLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxziplinLib.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 		DC67581B1EBC9FE000B1AFFC /* AxziplinLib */ = {
 			isa = PBXGroup;
 			children = (
+				DC6758291EBCA37400B1AFFC /* AxziplinLib.h */,
 				DC67581D1EBC9FE000B1AFFC /* Info.plist */,
 			);
 			path = AxziplinLib;
@@ -55,7 +58,7 @@
 		DC6758241EBCA10300B1AFFC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DC6758251EBCA10300B1AFFC /* AxziplinLib.h */,
+				DC6758271EBCA36000B1AFFC /* Encryptor.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -67,7 +70,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC6758261EBCA10300B1AFFC /* AxziplinLib.h in Headers */,
+				DC67582A1EBCA37400B1AFFC /* AxziplinLib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +107,7 @@
 					DC6758181EBC9FE000B1AFFC = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = TKA48YVS5T;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6758281EBCA36000B1AFFC /* Encryptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +252,7 @@
 		DC6758221EBC9FE000B1AFFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -261,6 +267,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiangyou.AxziplinLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -268,6 +275,7 @@
 		DC6758231EBC9FE000B1AFFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
