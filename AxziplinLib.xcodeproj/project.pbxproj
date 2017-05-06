@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DC6758281EBCA36000B1AFFC /* Encryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758271EBCA36000B1AFFC /* Encryptor.swift */; };
-		DC67582A1EBCA37400B1AFFC /* AxziplinLib.h in Headers */ = {isa = PBXBuildFile; fileRef = DC6758291EBCA37400B1AFFC /* AxziplinLib.h */; };
+		DC67582A1EBCA37400B1AFFC /* AxziplinLib.h in Headers */ = {isa = PBXBuildFile; fileRef = DC6758291EBCA37400B1AFFC /* AxziplinLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC6758481EBD920700B1AFFC /* RegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6758471EBD920700B1AFFC /* RegularExpression.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		DC67581D1EBC9FE000B1AFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC6758271EBCA36000B1AFFC /* Encryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encryptor.swift; sourceTree = "<group>"; };
 		DC6758291EBCA37400B1AFFC /* AxziplinLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxziplinLib.h; sourceTree = "<group>"; };
+		DC6758471EBD920700B1AFFC /* RegularExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpression.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				DC6758271EBCA36000B1AFFC /* Encryptor.swift */,
+				DC6758471EBD920700B1AFFC /* RegularExpression.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC6758281EBCA36000B1AFFC /* Encryptor.swift in Sources */,
+				DC6758481EBD920700B1AFFC /* RegularExpression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +317,7 @@
 				DC6758231EBC9FE000B1AFFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

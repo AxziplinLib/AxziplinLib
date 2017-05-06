@@ -1,12 +1,9 @@
 //
-//  Encryptor.swift
-//  AxziplinLib
+//  Package.swift
+//  AxziplinNet
 //
-//  Created by devedbox on 2017/5/5.
-//  Copyright © 2017年 jiangyou. All rights reserved.
-//
-//  Created by ai on 15/12/22.
-//  Copyright © 2015年 devedbox. All rights reserved.
+//  Created by devedbox on 2017/4/19.
+//  Copyright © 2017年 devedbox. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,8 +23,6 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Darwin
+import PackageDescription
 
-public struct Encryptor {
-    
-}
+let package = Package(name: "AxziplinNet", dependencies : [], exclude: ["Tests"])

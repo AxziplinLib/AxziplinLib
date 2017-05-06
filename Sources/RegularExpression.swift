@@ -1,12 +1,9 @@
 //
-//  Encryptor.swift
+//  ss.swift
 //  AxziplinLib
 //
-//  Created by devedbox on 2017/5/5.
+//  Created by devedbox on 2017/5/6.
 //  Copyright © 2017年 jiangyou. All rights reserved.
-//
-//  Created by ai on 15/12/22.
-//  Copyright © 2015年 devedbox. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,8 +23,22 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Darwin
+import Foundation
 
-public struct Encryptor {
-    
+precedencegroup RegexPrecedence {
+    higherThan: MultiplicationPrecedence
+    associativity: none
+}
+
+infix operator =~ : RegexPrecedence
+
+public func =~(lhs: String, rhs: String) -> Bool {
+    guard let regexexp = try? NSRegularExpression(pattern: rhs, options: .all) else { return false }
+    return regexexp.matches(in: lhs, options: [], range: NSRange(location: 0, length: lhs.lengthOfBytes(using: .utf8))).count > 0
+}
+
+extension NSRegularExpression.Options {
+    static var all: NSRegularExpression.Options {
+        return [.caseInsensitive, .allowCommentsAndWhitespace, .ignoreMetacharacters, .dotMatchesLineSeparators, .anchorsMatchLines, .useUnixLineSeparators, .useUnicodeWordBoundaries]
+    }
 }
